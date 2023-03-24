@@ -2,9 +2,8 @@ import { Connection, PublicKey } from "@solana/web3.js";
 import React, { useState } from "react";
 import { DEV_NET_RPC_URL, TEST_NET_RPC_URL } from './constants';
 import './App.css';
-import Header from './Header';
-import { Button, Form, Modal } from 'react-bootstrap';
-import SolanaLogo from 'jsx:./assets/SolanaLogo.svg';
+import { Form, Modal } from 'react-bootstrap';
+import SolanaLogo from 'jsx:./assets/solana.svg';
 
 type RPC = 'devnet' | 'testnet';
 function App() {
