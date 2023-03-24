@@ -1,0 +1,47 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: #161B19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+    align-items: center;
+}
+
+.form-label {
+    color: white;
+}
+
+.form {
+    min-width: 300px;
+}
+
+.submit-btn {
+border-radius: 4px;
+background-color: #1ED79A !important;
+border-color: #1ED79A;
+color: #1A4E3F;
+}
+
+.modal-body a {
+    text-align: center;
+}
+
+.modal-body p {
+    text-align: center;
+}
+
+/* .sub-heading {
+    color: #9945FF;
+} */
+
+.modal-footer {
+    justify-content: center !important;
+}
+
+.sub-heading {
+    color: #1ED79A;
+}

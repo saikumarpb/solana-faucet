@@ -1,4 +1,5 @@
 {
+  "include": ["src", "src/custom.d.ts"],
   "compilerOptions": {
     "jsx": "react",
     /* Language and Environment */
