@@ -98,7 +98,7 @@ function App() {
   );
 
   return (
-    <div className="app">
+    <div className="app p-4">
       <div className="d-flex flex-column justify-content-center body">
         <div className="pb-5">
           <SolanaLogo height="40px" width="270px" />
