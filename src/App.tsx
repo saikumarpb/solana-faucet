@@ -4,6 +4,8 @@ import { DEV_NET_RPC_URL, TEST_NET_RPC_URL } from './constants';
 import './App.css';
 import { Form, Modal } from 'react-bootstrap';
 import SolanaLogo from 'jsx:./assets/solana.svg';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 type RPC = 'devnet' | 'testnet';
 function App() {
@@ -40,7 +42,12 @@ function App() {
           setTxHash(data);
           setShowsuccessModal(true);
         })
-        .catch((e) => console.error(e.toString()));
+        .catch((e) =>
+          toast.error('Something went wrong from solana, Airdrop failed.', {
+            toastId: 'error',
+            position: 'bottom-right',
+          })
+        );
     } else {
     }
   };
@@ -135,6 +142,7 @@ function App() {
         </Form>
         {renderSuccessModal()}
       </div>
+      <ToastContainer />
     </div>
   );
 }
